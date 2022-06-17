@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Your World of Fashion | Lyst</title>
+    <link rel="icon" href="/lyst.png">
     <style>
          *{
             font-family: Suisse Intl,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -156,7 +157,7 @@
         /* footer end  */
 
         #cartpage{
-            border: 1px solid red;
+           
             height: auto;
           
             
@@ -164,7 +165,7 @@
         #immg{
             width: 15%;
             height: 200px;
-            border: 1px solid blue;
+         
            
         }
         #immg>img{
@@ -194,7 +195,7 @@
        #paytotal{
         width: 100%;
         height: 150px;
-        border: 1px solid blue;
+        border: 1px solid black;
         display: flex;
         justify-content: space-between;
         
@@ -208,16 +209,25 @@
        #remove{
         margin-top: 30px; 
         width: 100px;
-        height: 20px;
+        height: 30px;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+       
        }
        #chechout{
-        width: 120px;
+        margin-top: 30px; 
+        width: 100px;
         height: 30px;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
        }
-       #chechout>a{
-        font-size: 20px;
-        color: black;
-       }
+      
     </style>
 </head>
 <body>
@@ -275,7 +285,7 @@
             </div>
             <div id="total">
                 <h3 id="total_price"></h3>
-                <button id="checkout"><a href="checkout.html">Check out</a> </button>
+                <button id="checkout">Checkout</button>
             </div>
 
 
@@ -341,6 +351,12 @@
 
 <script>
 
+ document.querySelector("#checkout").addEventListener("click",checkOut);
+ 
+ function checkOut(){
+    window.location.href="checkout.html"
+ }
+
 let indexArr=JSON.parse(localStorage.getItem("loginData"));
 
 console.log(indexArr)
@@ -355,24 +371,28 @@ if(localStorage.getItem("flag_sta")){
 
     var bagArr = JSON.parse(localStorage.getItem("bag1"))||[];
 
+    
+
+
+    displayProduct(aCartArr);
+
     if(aCartArr.length==0){
         let div1=document.createElement("div");
-        div1.innerText="Favourite Cart Is Empty Right Now"
-        div1.innerText = "Why Don't You Go On Product Page And Add Something In Bag"
+        div1.style.height="200px";
+        let para1=document.createElement("h3");
         
-        var butto=document.createElement("button")
+        para1.innerText = "Why Don't You Go On Product Page And Add Something In Cart"
+        
+        let butto=document.createElement("button")
         butto.setAttribute("id","productbutt")
         butto.addEventListener("click",emptyCart);
         butto.innerText = "GO TO PRODUCT PAGE"
-        div1.append(butto);
+        div1.append(para1,butto);
         document.querySelector("#cartpage").append(div1)
         function emptyCart(){
             window.location.href="mens.html"
         }
     }
-
-
-    displayProduct(aCartArr);
 
   
 
@@ -428,6 +448,7 @@ if(localStorage.getItem("flag_sta")){
             btn.innerText="Remove";
             btn.addEventListener("click",function(){
                 deletePro(ind);
+                window.location.reload();
             })
 
 
