@@ -1,0 +1,327 @@
+*{
+    font-family: Suisse Intl,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+#main_nav{
+    border-bottom: 1px solid black;
+   
+   
+   
+}
+#navbar{
+ 
+    display: flex;
+    
+    justify-content:flex-end;
+
+}
+#first{
+  
+    display: flex;
+    /* border: 1px solid blue; */
+    width: 20%;
+    justify-content: space-around;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 12px;
+   
+}
+#first>div:last-child{
+    display: flex;
+    width: 38%;
+    /* border: 1px solid green; */
+    justify-content: space-between;
+}
+#first>div:last-child>div:last-child{
+  color: white;
+  background-color: black;
+  padding: 0px 10px;
+  font-size: 14px;
+}
+#help{
+    text-align: center;
+    font-family: Suisse Intl,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    border: none;
+}
+#second{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    
+}
+#second>div:first-child{
+    font-weight: bold;
+    display: flex;
+    width:25% ;
+    font-size: 18px;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+}
+#ppg>a{
+    text-decoration: none;
+}
+#ppgM{
+    text-decoration: underline 2px;
+   
+    
+}
+
+#second>div>div>a{
+    color: black;
+}
+#second>div:first-child>div:first-child{
+    font-size: 40px;
+    font-weight: 1000;
+}
+#searchbar{
+    width: 40%;
+    padding: 0px;
+    
+}
+#cartlogo{
+  
+  height: 55px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:url(https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-svg-png-icon-download-28.png) ;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+#cartlogo>p{
+margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 16px;
+}
+#cartlogo>a{
+    color: black;
+  font-size: 18px;
+  font-weight:bold;
+  margin-left: -60px;
+  text-decoration: none;
+}
+#container{
+    
+    margin: auto;
+    width: 100%;
+    display: grid;;
+    grid-template-columns:repeat(4,1fr) ;
+    grid-template-rows: repeat(auto,auto);
+    
+    
+}
+#container>div>img{
+    margin-bottom: 20px;
+}
+#container>div>img:hover{
+  cursor: pointer;
+}
+#container>div{
+   border: 1px solid gray;
+ 
+}
+#container>div>p{
+    
+    font-size: 14px;
+    margin-left: 10px;
+}
+#container>div>p:hover{
+  color: blueviolet;
+  cursor: pointer;
+}
+
+#container>div>div{
+ 
+ margin-left: 10px;
+  display: flex;
+  margin-bottom: 20px;
+ 
+}
+#container>div>div>p{
+  font-size: 16px;
+  font-weight: bold;
+}
+#container>div>div>p:nth-child(1){
+  text-decoration: line-through;
+ 
+  
+}
+#container>div>div>p:nth-child(2){
+  
+  margin-left: 5px;
+  color: red;
+}
+#container>div>div>p:nth-child(3){
+  color: gray;
+  margin-left: 10px;
+  font-weight: lighter;
+}
+button{
+  background-color: black;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  
+}
+button:hover{
+  cursor: pointer;
+  color: red;
+}
+#head-div{
+  height: 100px;
+ border: 1px solid black;
+    background-color:#f5f4f2 ;
+
+}
+#head-div>h1{
+  margin-left: 50px;
+  
+}
+#pro-cat{
+  height: auto;
+ 
+  width: 100%;
+  display: flex;
+}
+#cat{
+
+  margin-top: 20px;
+overflow-y: scroll;
+ height: 500px;
+ 
+  width: 20%;
+}
+#pro{
+  padding: 20px;
+ 
+  width: 80%;
+ 
+}
+#sort{
+ 
+  border: 2px solid black;
+ 
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+#filter{
+ 
+  border: 2px solid black;
+ 
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+
+}
+
+/* sidebar start */
+
+#sidebar {
+  grid-area: sidebar;
+  /* position: sticky; */
+
+}
+
+details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+summary {
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid lightgray;
+    list-style: none;
+}
+
+details[open] summary:before {
+    content: '';
+    display: block;
+    background: transparent;
+}
+
+summary:after {
+    content: '';
+    float: right;
+    width: 8px;
+    height: 8PX;
+    border-bottom: 1px solid currentColor;
+    border-left: 1px solid currentColor;
+    border-bottom-left-radius: 2px;
+    transform: rotate(45deg) translate(50%, 0%);
+}
+
+.droplist {
+    display: flex;
+    padding-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.droplist>label {
+    margin-left: 15px;
+}
+#sortFilter{
+  margin-bottom: 50px;
+  width: 100%;
+  text-align: right;
+ 
+}
+
+/* footer start  */
+
+#footer{
+    width: 100%;
+    height: auto;
+    background-color:#f5f4f2 ;
+    display: flex;
+}
+#fhalftr{
+    height: 100%;
+    width: 50%;
+    
+    text-align: center;
+    
+   
+}
+#fhalftr>p{
+    font-size: 14px;
+    margin-right: 20px;
+}
+#fhalftr>img{
+    width: 40%;
+    margin-top: 60px;
+    margin-right: 110px;
+   
+    
+}
+.yr{
+    font-size: 14px;
+    text-align: left;
+    margin-left: 150px;
+}
+
+#shalftr{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+#shalftr>div>p{
+    font-size: 14px;
+}
+
+
+
+/* footer end  */

@@ -1,0 +1,220 @@
+*{
+    font-family: Suisse Intl,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+#main_nav{
+    border-bottom: 1px solid black;
+   
+   
+}
+#navbar{
+    display: flex;
+    
+    justify-content:flex-end;
+
+}
+#first{
+    display: flex;
+    /* border: 1px solid blue; */
+    width: 20%;
+    justify-content: space-around;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 12px;
+   
+}
+#first>div:last-child{
+    display: flex;
+    width: 38%;
+    /* border: 1px solid green; */
+    justify-content: space-between;
+}
+#first>div:last-child>div:last-child{
+  color: white;
+  background-color: black;
+  padding: 0px 10px;
+  font-size: 14px;
+}
+#help{
+    text-align: center;
+    font-family: Suisse Intl,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    border: none;
+}
+#second{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    
+}
+#second>div:first-child{
+    font-weight: bold;
+    display: flex;
+    width:25% ;
+    font-size: 18px;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+}
+#ppg>a{
+    text-decoration: none;
+}
+#second>div>div>a{
+    color: black;
+}
+#second>div:first-child>div:first-child{
+    font-size: 40px;
+    font-weight: 1000;
+}
+#searchbar{
+    width: 40%;
+    padding: 0px;
+    
+}
+#cartlogo{
+  
+  height: 55px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:url(https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-svg-png-icon-download-28.png) ;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+#cartlogo>p{
+margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 16px;
+}
+#cartlogo>a{
+    color: black;
+  font-size: 18px;
+  font-weight:bold;
+  margin-left: -60px;
+  text-decoration: none;
+}
+
+/* navbar css end */
+
+ /* footer start  */
+
+ #footer{
+    width: 100%;
+    height: auto;
+    background-color:#f5f4f2 ;
+    display: flex;
+}
+#fhalftr{
+    height: 100%;
+    width: 50%;
+    
+    text-align: center;
+    
+   
+}
+#fhalftr>p{
+    font-size: 14px;
+    margin-right: 20px;
+}
+#fhalftr>img{
+    width: 40%;
+    margin-top: 60px;
+    margin-right: 110px;
+   
+    
+}
+.yr{
+    font-size: 14px;
+    text-align: left;
+    margin-left: 150px;
+}
+
+#shalftr{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+#shalftr>div>p{
+    font-size: 14px;
+}
+
+
+
+/* footer end  */
+
+#cartpage{
+   
+    height: auto;
+  
+    
+}
+#immg{
+    width: 15%;
+    height: 200px;
+ 
+   
+}
+#immg>img{
+    height: 100%;
+    width: 100%;
+}
+#qty{
+    margin-top: 20px;
+    display: flex;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+#qty>select{
+  width: 60px;
+  margin-left: 10px;
+  font-size: 18px;
+  border: none;
+}
+#cart1{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+#paytotal{
+width: 100%;
+height: 150px;
+border: 1px solid black;
+display: flex;
+justify-content: space-between;
+
+}
+#pay{
+margin-left: 30px;
+}
+#total{
+    margin-right: 200px;
+}
+#remove{
+margin-top: 30px; 
+width: 100px;
+height: 30px;
+font-size: 16px;
+font-weight: bold;
+background-color: black;
+color: white;
+border-radius: 5px;
+
+}
+#check_out{
+margin-top: 30px; 
+width: 100px;
+height: 30px;
+font-size: 16px;
+font-weight: bold;
+background-color: black;
+color: white;
+border-radius: 5px;
+}

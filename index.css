@@ -1,0 +1,381 @@
+*{
+    font-family: Suisse Intl,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+#main_nav{
+    border-bottom: 1px solid black;
+   
+   
+}
+#navbar{
+    display: flex;
+    
+    justify-content:flex-end;
+
+}
+#first{
+    display: flex;
+    /* border: 1px solid blue; */
+    width: 20%;
+    justify-content: space-around;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 12px;
+   
+}
+#first>div:last-child{
+    display: flex;
+    width: 38%;
+    /* border: 1px solid green; */
+    justify-content: space-between;
+}
+#first>div:last-child>div:last-child{
+  color: white;
+  background-color: black;
+  padding: 0px 10px;
+  font-size: 14px;
+}
+#help{
+    text-align: center;
+    font-family: Suisse Intl,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    border: none;
+}
+#second{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    
+}
+#second>div:first-child{
+    font-weight: bold;
+    display: flex;
+    width:25% ;
+    font-size: 18px;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+}
+#ppg>a{
+    text-decoration: none;
+}
+#second>div>div>a{
+    color: black;
+}
+#second>div:first-child>div:first-child{
+    font-size: 40px;
+    font-weight: 1000;
+}
+#searchbar{
+    width: 40%;
+    padding: 0px;
+    
+}
+#cartlogo{
+  
+  height: 55px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:url(https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-svg-png-icon-download-28.png) ;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+#cartlogo>p{
+margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 16px;
+}
+#cartlogo>a{
+    color: black;
+  font-size: 18px;
+  font-weight:bold;
+  margin-left: -60px;
+  text-decoration: none;
+}
+
+/* navbar css end */
+
+#nav_img>img{
+    width: 100%;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+    margin-bottom: 70px;
+}
+
+#scroll{
+   
+    display: flex;
+    overflow-x:scroll;
+    overflow-y: hidden;
+   
+   
+   
+}
+#tl_img{
+    display: flex;
+    width: 30%;
+    height: 300px;
+    border: 1px solid black;
+    border-left: none;
+    
+}
+#ttl{
+    
+    width: 25%;
+   
+}
+#ttl>h3{
+ transform: rotate(-90deg);
+ line-height: 1.5rem; 
+ margin-top: 120px;
+ margin-left: -70px;
+ width: 300px;
+ 
+ font-weight: 500;
+ font-size: 22px;
+
+
+}
+#ttl5{
+    width: 25%;
+}
+#ttl5>h3{
+ transform: rotate(-90deg);
+ line-height: 1.5rem; 
+ margin-top: 110px;
+margin-left: -90px;
+ width: 300px;
+ 
+ font-weight: 500;
+ font-size: 22px;
+}
+#imgg{
+    width: 80%;
+}
+#imgg>img{
+    
+    height: 100%;
+}
+
+/* scroll1 end */
+
+  /* scroll2 start */
+#scroll2{
+  
+    margin-top: 50px;
+    display: flex;
+    overflow-x:scroll;
+    overflow-y: hidden;
+   
+}
+#tl_img2{
+    height: 400px;
+    border: 1px solid black;
+    border-left: none;
+}
+#ttl2{
+   
+    height: 20%;
+}
+#ttl2>h3{
+    width: 300px;
+    
+    margin-left: 30px;
+    font-weight: lighter;
+    line-height: 2rem; 
+    font-size: 20px;
+}
+#imgg2{
+   width: 85%;
+    height: 80%;
+    
+}
+#imgg2>img{
+  height: 94%;
+  margin-left: 70px;
+}
+
+  /* scroll2 end */
+
+  /* 123 div start */
+
+  #div123{
+    display: flex;
+    border: 1px solid black;
+    border-bottom: none;
+    
+    margin-top: 60px;
+    height: auto;
+   
+  }
+  #nmdiv{
+    width: 65%;
+    
+    
+    background-color: #f5f4f2;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,auto);
+   
+   
+  }
+  #nmdiv>div{
+    margin: auto;
+    display: flex;
+    width: 80%;
+   
+   
+   
+    }
+  #nmdiv>div>h1{ 
+    font-size: 100px;
+    margin-bottom: -20px;
+   
+    
+  }
+  #nmdiv>div>h2{
+    font-weight: 500;
+    font-size: 30px;
+  }
+  #nmdiv>div>p{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5rem;
+    
+  }
+  #cldiv{
+    display: flex;
+    width: 35%;
+   
+    background-color: greenyellow;
+  }
+
+
+   /* 123 div end */
+
+   /* cldiv start */
+
+   #cldiv>div:first-child{
+    width: 80%;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+   }
+   #cldiv>div:first-child:hover{
+    background-color: rgb(191, 161, 219);
+    cursor: pointer;
+   }
+   #cldiv>div:first-child>h1{
+    font-size: 40px;
+    font-weight: 600;
+   }
+   #cldiv>div:first-child>h1>button{
+    padding: 10px 50px;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    border: 0px;
+   }
+    /* cldiv end */
+
+    /* most wanted start */
+    #mwdiv{
+        border: 1px solid black;
+        height: 300px;
+        display: flex;
+        
+    }
+    #mwdiv>div:last-child{
+        margin-left: -80px;
+       height: 100%;
+        width: 90%;
+       
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(2,auto);
+        
+    }
+    #mwdiv>div:last-child>div{
+      
+        width: 80%;
+        
+    }
+    #mwdiv>div:last-child>div>h2{
+        font-weight: 500;
+        font-size: 20px;
+        margin-top: 30px;
+       
+    }
+    #mwdiv>div:last-child>div>h2:hover{
+        color: blueviolet;
+        cursor: pointer;
+    }
+    #mwdiv>div:first-child{
+        width: 10%;
+        height: 100%;
+        margin-left: 10px;
+       
+        
+    }
+    #ttl3>h2{
+    transform: rotate(-90deg);
+    line-height: 2rem; 
+    margin-top: 120px;
+    margin-left: -100px;
+    font-weight: 400;
+    font-size: 30px;
+}
+    /* most wanted end */
+
+/* footer start  */
+
+#footer{
+    width: 100%;
+    height: auto;
+    background-color:#f5f4f2 ;
+    display: flex;
+}
+#fhalftr{
+    height: 100%;
+    width: 50%;
+    
+    text-align: center;
+    
+   
+}
+#fhalftr>p{
+    font-size: 14px;
+    margin-right: 20px;
+}
+#fhalftr>img{
+    width: 40%;
+    margin-top: 60px;
+    margin-right: 110px;
+   
+    
+}
+.yr{
+    font-size: 14px;
+    text-align: left;
+    margin-left: 150px;
+}
+
+#shalftr{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+#shalftr>div>p{
+    font-size: 14px;
+}
+
+
+
+/* footer end  */
