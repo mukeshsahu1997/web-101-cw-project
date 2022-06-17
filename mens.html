@@ -1,0 +1,1143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clothing for Mens</title>
+    
+    <link rel="icon" href="/lyst.png">
+   
+    <style>
+       *{
+            font-family: Suisse Intl,Helvetica Neue,Helvetica,Arial,sans-serif;
+        }
+       
+        #main_nav{
+            border-bottom: 1px solid black;
+           
+           
+           
+        }
+        #navbar{
+         
+            display: flex;
+            
+            justify-content:flex-end;
+
+        }
+        #first{
+          
+            display: flex;
+            /* border: 1px solid blue; */
+            width: 20%;
+            justify-content: space-around;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 12px;
+           
+        }
+        #first>div:last-child{
+            display: flex;
+            width: 38%;
+            /* border: 1px solid green; */
+            justify-content: space-between;
+        }
+        #first>div:last-child>div:last-child{
+          color: white;
+          background-color: black;
+          padding: 0px 10px;
+          font-size: 14px;
+        }
+        #help{
+            text-align: center;
+            font-family: Suisse Intl,Helvetica Neue,Helvetica,Arial,sans-serif;
+            font-size: 13px;
+            border: none;
+        }
+        #second{
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 10px;
+            
+        }
+        #second>div:first-child{
+            font-weight: bold;
+            display: flex;
+            width:25% ;
+            font-size: 18px;
+            justify-content: space-around;
+            align-items: center;
+            
+            
+        }
+        #ppg>a{
+            text-decoration: none;
+        }
+        #ppgM{
+            text-decoration: underline 2px;
+           
+            
+        }
+       
+        #second>div>div>a{
+            color: black;
+        }
+        #second>div:first-child>div:first-child{
+            font-size: 40px;
+            font-weight: 1000;
+        }
+        #searchbar{
+            width: 40%;
+            padding: 0px;
+            
+        }
+        #cartlogo{
+          
+          height: 55px;
+          width: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background:url(https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-svg-png-icon-download-28.png) ;
+          background-size: contain;
+          background-repeat: no-repeat;
+          cursor: pointer;
+        }
+        #cartlogo>p{
+        margin-bottom: 40px;
+          font-size: 16px;
+          font-weight: bold;
+          margin-left: 16px;
+        }
+        #cartlogo>a{
+            color: black;
+          font-size: 18px;
+          font-weight:bold;
+          margin-left: -60px;
+          text-decoration: none;
+        }
+        #container{
+            
+            margin: auto;
+            width: 100%;
+            display: grid;;
+            grid-template-columns:repeat(4,1fr) ;
+            grid-template-rows: repeat(auto,auto);
+            
+            
+        }
+        #container>div>img{
+            margin-bottom: 20px;
+        }
+        #container>div>img:hover{
+          cursor: pointer;
+        }
+        #container>div{
+           border: 1px solid gray;
+         
+        }
+        #container>div>p{
+            
+            font-size: 14px;
+            margin-left: 10px;
+        }
+        #container>div>p:hover{
+          color: blueviolet;
+          cursor: pointer;
+        }
+       
+        #container>div>div{
+         
+         margin-left: 10px;
+          display: flex;
+          margin-bottom: 20px;
+         
+        }
+        #container>div>div>p{
+          font-size: 16px;
+          font-weight: bold;
+        }
+        #container>div>div>p:nth-child(1){
+          text-decoration: line-through;
+         
+          
+        }
+        #container>div>div>p:nth-child(2){
+          
+          margin-left: 5px;
+          color: red;
+        }
+        #container>div>div>p:nth-child(3){
+          color: gray;
+          margin-left: 10px;
+          font-weight: lighter;
+        }
+        button{
+          background-color: black;
+          color: white;
+          padding: 5px;
+          text-align: center;
+          
+        }
+        button:hover{
+          cursor: pointer;
+          color: red;
+        }
+        #head-div{
+          height: 100px;
+         border: 1px solid black;
+            background-color:#f5f4f2 ;
+        
+        }
+        #head-div>h1{
+          margin-left: 50px;
+          
+        }
+        #pro-cat{
+          height: auto;
+         
+          width: 100%;
+          display: flex;
+        }
+        #cat{
+
+          margin-top: 20px;
+        overflow-y: scroll;
+         height: 500px;
+         
+          width: 20%;
+        }
+        #pro{
+          padding: 20px;
+         
+          width: 80%;
+         
+        }
+        #sort{
+         
+          border: 2px solid black;
+         
+          font-size: 16px;
+          font-weight: bold;
+          padding: 10px 20px;
+        }
+        #filter{
+         
+          border: 2px solid black;
+         
+          font-size: 16px;
+          font-weight: bold;
+          padding: 10px 20px;
+
+        }
+
+        /* sidebar start */
+
+        #sidebar {
+          grid-area: sidebar;
+          /* position: sticky; */
+   
+        }
+
+        details {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        summary {
+            padding: 20px;
+            cursor: pointer;
+            border-bottom: 1px solid lightgray;
+            list-style: none;
+        }
+
+        details[open] summary:before {
+            content: '';
+            display: block;
+            background: transparent;
+        }
+
+        summary:after {
+            content: '';
+            float: right;
+            width: 8px;
+            height: 8PX;
+            border-bottom: 1px solid currentColor;
+            border-left: 1px solid currentColor;
+            border-bottom-left-radius: 2px;
+            transform: rotate(45deg) translate(50%, 0%);
+        }
+
+        .droplist {
+            display: flex;
+            padding-left: 30px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .droplist>label {
+            margin-left: 15px;
+        }
+        #sortFilter{
+          margin-bottom: 50px;
+          width: 100%;
+          text-align: right;
+         
+        }
+
+        /* footer start  */
+
+        #footer{
+            width: 100%;
+            height: auto;
+            background-color:#f5f4f2 ;
+            display: flex;
+        }
+        #fhalftr{
+            height: 100%;
+            width: 50%;
+            
+            text-align: center;
+            
+           
+        }
+        #fhalftr>p{
+            font-size: 14px;
+            margin-right: 20px;
+        }
+        #fhalftr>img{
+            width: 40%;
+            margin-top: 60px;
+            margin-right: 110px;
+           
+            
+        }
+        .yr{
+            font-size: 14px;
+            text-align: left;
+            margin-left: 150px;
+        }
+
+        #shalftr{
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 70px;
+            margin-bottom: 30px;
+        }
+        #shalftr>div>p{
+            font-size: 14px;
+        }
+        
+
+
+        /* footer end  */
+
+    </style>
+  </head>
+  <body>
+
+    <div id="main_nav">
+      <div id="navbar">
+          <div id="first">
+              <div>IN-US$</div>
+              <div>
+                  <select name="Help" id="help">
+                      <option value="">Help</option>
+                      <option value="">Help center</option>
+                      <option value="">Contact us</option>
+                      <option value="">About us</option>
+                      <option value="">Careers</option>
+                  </select>
+              </div>
+              <div>
+                <div id="emptylog"><a style="color:black; text-decoration: none;" href="login.html">Sign in</a> </div>
+                <div id="emptyjoin"><a style="color:white; text-decoration: none;" href="signup.html">Join</a></div>
+              </div>
+          </div>
+  
+          <!-- first div end -->
+  
+          
+      </div>
+      <div id="second">
+          <div>
+              <div><a href="index.html">LYST</a> </div>
+              <div id="ppg"><a href="womens.html">WOMEN</a> </div>
+              <div id="ppgM"><a href="mens.html">MEN</a> </div>
+              
+          </div>
+          <input id="searchbar" type="text" placeholder="  SEARCH ( E.G ACNE JEANS )">
+          <div id="cartlogo"><a href="cart.html">CART</a>
+              <p>0</p>
+            </div>
+      
+      </div>
+  </div>
+
+  <!-- full nav bar end -->
+    <div id="head-div">
+      <h1></h1>
+    </div>
+     
+    <div id="pro-cat">
+      <div id="cat">
+        <div id="sidebar">
+          
+          <details>
+            <summary>Category</summary>
+            <div class="droplist">
+                <input name="filters" value="shoes" type="radio">
+                <label>Shoes</label>
+            </div>
+            <div class="droplist">
+                <input name="filters" value="t-shirts" type="radio">
+                <label>T-Shirt</label>
+            </div>
+            <div class="droplist">
+                <input   name="filters" value="pants" type="radio">
+                <label>Pants</label>
+            </div>
+            <div class="droplist">
+                <input  name="filters" value="slipper" type="radio">
+                <label>Slipper</label>
+            </div>
+            <div class="droplist">
+              <input name="filters" value="bag" type="radio">
+              <label>Bag</label>
+          </div>
+        </details>
+
+          <details>
+              <summary>Sale</summary>
+              <div class="droplist">
+                <input name="filters" value="shoes" type="radio">
+                <label>On Sale</label>
+            </div>
+            <div class="droplist">
+                <input name="filters" value="t-shirts" type="radio">
+                <label>20% off or more</label>
+            </div>
+            <div class="droplist">
+                <input   name="filters" value="pants" type="radio">
+                <label>50% off or more</label>
+            </div>
+            <div class="droplist">
+                <input  name="filters" value="slipper" type="radio">
+                <label>70% off or more</label>
+            </div>
+            
+          </details>
+          <details>
+              <summary>Shipping</summary>
+              <div class="droplist">
+                  <input type="checkbox">
+                  <label>free shipping</label>
+             
+          </details>
+          <details>
+              <summary>Color</summary>
+              <div class="droplist">
+                  <input type="checkbox">
+                 
+              </div>
+              <div class="droplist">
+                  <input type="checkbox">
+               
+              </div>
+              <div class="droplist">
+                  <input type="checkbox">
+                  
+              </div>
+              <div class="droplist">
+                  <input type="checkbox">
+                 
+              </div>
+          </details>
+          <details>
+              <summary>Meterial</summary>
+              <div class="droplist">
+                  <input type="checkbox">
+                  <label>Canva </label>
+              </div>
+              <div class="droplist">
+                  <input type="checkbox">
+                  <label>Cashmere</label>
+              </div>
+              <div class="droplist">
+                  <input type="checkbox">
+                  <label>Chiffon</label>
+              </div>
+              <div class="droplist">
+                  <input type="checkbox">
+                  <label>Cotton</label>
+              </div>
+          </details>
+          <details>
+              <summary>Designers</summary>
+              <div class="droplist">
+                  <input type="checkbox">
+                 
+              </div>
+              <div class="droplist">
+                  <input type="checkbox">
+                 
+              </div>
+              <div class="droplist">
+                  <input type="checkbox">
+                 
+              </div>
+              <div class="droplist">
+                  <input type="checkbox">
+                  
+              </div>
+          </details>
+          <details>
+              <summary>Stores</summary>
+              <div class="droplist">
+                  <input type="checkbox">
+                  
+              </div>
+              <div class="droplist">
+                  <input type="checkbox">
+                  
+              </div>
+              <div class="droplist">
+                  <input type="checkbox">
+                 
+              </div>
+              <div class="droplist">
+                  <input type="checkbox">
+                  
+              </div>
+          </details>
+         
+
+      </div>
+
+       
+
+      </div>
+      <div id="pro">
+        <div id="sortFilter">
+          <!-- <h1>0</h1> -->
+          <select  name="" id="sort">
+         
+            <option value="Ascending">Sort by recommended</option>
+            <option value="Descending">Sort by newest</option>
+         
+            <option value="High"> Sort by price(High to Low)</option>
+            <option value="Low">Sort by price(Low to High)</option>
+            
+          </select>
+  
+          <select name="" id="filter">
+            <option value="all">Filter by All</option>
+            <option value="t-shirts">Filter by t-Shirt</option>
+            <option value="slipper">Filter by slipper</option>
+            <option value="pants">Filter by pants</option>
+            <option value="bag">Filter by bag</option>
+            <option value="shoes">Filter by shoes</option>
+            <option value="hoodie">Filter by hoodie</option>
+          </select>
+
+        </div>
+       
+        <div id="container"></div>
+      </div>
+      
+      
+
+    </div>
+
+     <!-- footer start -->
+
+   <div id="footer">
+    <div id="fhalftr">
+        <img src="Screenshot (172).png" alt=""> <br>
+        <p>Learn about the Lyst app for iphone, iPad and Android</p> <br>
+        <p class="yr">@ 2022 Lyst</p>
+    </div>
+
+    <div id="shalftr">
+        <div>
+            <h3>INTERNATIONAL</h3>
+            <p>Lyst - AU</p>
+            <p>Lyst - CA</p>
+            <p>Lyst - UK</p>
+            <p>Lyst - Osterreich</p>
+            <p>Lyst - Schweiz</p>
+            <p>Lyst -Schweiz</p>
+            <p>Lyst - Deutschland</p>
+            <p>Lyst - Espana</p>
+            <p>Lyst - France</p>
+            <p>Lyst - Italia</p>
+            <p>Lyst - Belgie</p>
+            <p>Lyst -Nederland</p>
+           
+        </div>
+        <div>
+            <h3>HELP AND INFO</h3>
+            <p>Help center</p>
+            <p>About us</p>
+            <p>Shipping policy</p>
+            <p>Returns policy</p>
+            <p>Payments</p>
+            <p>Refund policy</p>
+            <p>Developers</p>
+            <p>Careers</p>
+            <p>Contact</p>
+            <p>Terms $ conditions</p>
+            <p>Privacy & cookie policy</p>
+            <p>Intellectual property</p>
+            <p>Categories</p>
+            <p>Become a partner</p>
+            <p>Lyst Insight</p>
+            <p>Lyst News</p>
+        </div>
+
+    </div>
+</div>
+
+ <!-- footer end -->
+   
+
+   
+
+    
+    
+  </body>
+</html>
+
+<script>
+
+let indexArr=JSON.parse(localStorage.getItem("loginData"));
+
+console.log(indexArr)
+
+if(localStorage.getItem("flag_sta")){
+    document.querySelector("#emptylog").innerHTML="Hi"+" "+ indexArr.name;
+   
+
+    document.querySelector("#emptyjoin").innerHTML="";
+}
+
+  // var cus_name=JSON.parse(localStorage.getItem("userData")) || [] ;
+
+  // // console.log();
+
+  // let x=document.querySelector("#customer_name");
+  // x.innerText= "welcome"+" "+cus_name[cus_name.length-1]["name"]
+
+  // sort function  start
+
+  var mensLs=JSON.parse(localStorage.getItem("mensDataLs")) ;
+  
+  document.querySelector("#sort").addEventListener("change",handleSortName);
+
+function handleSortName(){
+  let selected=document.querySelector("#sort").value;
+  console.log(selected)
+      if(selected=="Ascending"){
+        mensLs.sort(function(a,b){
+          if(a.name>b.name) return 1
+          if(a.name<b.name) return -1
+          return 0
+        });
+
+        displayPage(mensLs);
+      }
+
+      if(selected=="Descending"){
+        mensLs.sort(function(a,b){
+          if(a.name>b.name) return -1
+          if(a.name<b.name) return 1
+          return 0
+        });
+
+        displayPage(mensLs);
+        
+      }
+
+      if(selected=="Low"){
+        mensLs.sort(function(a,b){
+         return a.cost-b.cost;
+        });
+
+        displayPage(mensLs);
+      }
+
+      if(selected=="High"){
+        mensLs.sort(function(a,b){
+         return b.cost-a.cost
+        });
+
+        displayPage(mensLs);
+        
+      };
+
+}
+
+document.querySelector("#filter").addEventListener("change",handleFilter);
+
+    function handleFilter(){
+      let selected=document.querySelector("#filter").value;
+      if(selected=="all"){
+        displayPage(mensLs)
+      }
+      else{
+        let filterList=mensLs.filter(function(elem){
+        return elem.cat==selected;
+      });
+
+      displayPage(filterList)
+
+      }
+     
+    }
+
+   
+  
+//  sort function end
+
+document.querySelector("h1").innerText="Mens page";
+
+var mensData = [
+{
+  image_url:
+    "https://content.shop4reebok.com/static/Product-EX4296/reebok_EX4296_1.jpg.plp",
+  name: "MEN'S REEBOK RUNNING ROADMAP SHOES",
+  price: "$1170",
+  strikedoffprice: "$2599",
+  cat:"shoes",
+  per:"(58% off)",
+  cost:1170
+},
+{
+  image_url:
+    "https://content.shop4reebok.com/static/Product-EX3921/reebok_EX3921_1.jpg.plp",
+  name: "MEN'S REEBOK SWIM ARUBA FLIP SLIPPERS ",
+  price: "$699",
+  strikedoffprice: "$999",
+  cat:"slipper",
+  per:"(38% off)",
+  cost:699
+},
+{
+  image_url:
+    "https://content.shop4reebok.com/static/Product-EX4160/reebok_EX4160_1.jpg.plp",
+  name: " MEN'S REEBOK RUNNING AUSTIN SHOES",
+  price: "$945",
+  strikedoffprice: "$2099",
+  cat:"shoes",
+  per:"(48% off)",
+  cost:945
+},
+{
+  image_url:
+    "https://content.shop4reebok.com/static/Product-FV8798/MEN_SWIM_SLIPPERS_FV8798_1.jpg.plp",
+  name: "MEN'S REEBOK SWIM AVENGER FLIP LP SLIPPERS",
+  price: "$399",
+  strikedoffprice: "$799",
+  cat:"slipper",
+  per:"(58% off)",
+  cost:399
+},
+{
+  image_url:
+    "https://content.shop4reebok.com/static/Product-EW5173/reebok_EW5173_1.jpg.plp",
+  name: "MEN'S REEBOK RUNNING TEMPO SHOES ",
+  price: "$1620",
+  strikedoffprice: "$3599",
+  cat:"shoes",
+  per:"(58% off)",
+  cost:1620
+},
+{
+  image_url:
+    "https://content.shop4reebok.com/static/Product-FV7329/reebok_FV7329_1.jpg.plp ",
+  name: " MEN'S REEBOK RUNNING ASTRO BOOSTER SHOES ",
+  price: "$1440",
+  strikedoffprice: "$3199",
+  cat:"shoes",
+  per:"(58% off)",
+  cost:1440
+},
+{
+  image_url:
+    "https://content.shop4reebok.com/static/Product-GD8567/MEN_TRAINING_PANTS_GD8567_1.jpg.plp ",
+  name: " MEN'S TRAINING WORKOUT READY ELITAGE PANTS ",
+  price: "$1999",
+  strikedoffprice: "$3199",
+  cat:"pants",
+  per:"(48% off)",
+  cost:1999
+},
+{
+  image_url:
+    "https://content.shop4reebok.com/static/Product-GQ8758/reebok_GQ8758_1.jpg.plp ",
+  name: "MEN'S REEBOK TRAINING  POLO T-SHIRTS TEE  ",
+  price: "$769",
+  strikedoffprice: "$1099",
+  cat:"t-shirts",
+  per:"(38% off)",
+  cost:769
+},
+{
+  image_url:
+    "https://content.shop4reebok.com/static/Product-GP7180/reebok_GP7180_1.jpg.plp",
+  name: "MEN'S REEBOK TRAINING WORKOUT  TEE  ",
+  price: "$1299",
+  strikedoffprice: "$1440",
+  cat:"t-shirts",
+  per:"(37% off)",
+  cost:1299
+},
+{
+  image_url:
+    "https://content.shop4reebok.com/static/Product-EX3924/reebok_EX3924_1.jpg.plp ",
+  name: "MEN'S REEBOK SUPER SOFT FLIP SLIPPERS",
+  price: "$699",
+  strikedoffprice: "$999",
+  cat:"slipper",
+  per:"(38% off)",
+  cost:699
+},
+{
+  image_url:
+    "https://content.shop4reebok.com/static/Product-FW0343/reebok_FW0343_1.jpg.plp ",
+  name: "MEN'S REEBOK RUNNING RUN SHOES  ",
+  price: "$1620",
+  strikedoffprice: "$3599",
+  cat:"shoes",
+  per:"68%",
+  cost:1620
+},
+{
+  image_url:
+    "https://content.shop4reebok.com/static/Product-EX4285/reebok_EX4285_1.jpg.plp ",
+  name: "MEN'S REEBOK RUNNING GENESIS RUNNER SHOES  ",
+  price: "$1620",
+  strikedoffprice: "$3599",
+  cat:"shoes",
+  per:"(68% off)",
+  cost:1620
+},
+{
+  image_url:
+    "https://content.shop4reebok.com/static/Product-FV9519/MEN_SWIM_SLIPPERS_FV9519_1.jpg.plp ",
+  name: "MEN'S REEBOK SWIM RUSSLE FLIP SLIPPERS  ",
+  price: "$599",
+  strikedoffprice: "$999",
+  cat:"slipper",
+  per:"(38% off)",
+  cost:599
+},
+{
+  image_url:
+    "https://content.shop4reebok.com/static/Product-FW0318/reebok_FW0318_1.jpg.plp ",
+  name: " MEN'S REEBOK RUNNING TREND RUNNER SHOES",
+  price: "$1575",
+  strikedoffprice: "$3499",
+  cat:"shoes",
+  per:"(58% off)",
+  cost:1575
+},
+{
+  image_url:
+    "https://content.shop4reebok.com/static/Product-H00024/reebok_H00024_1.jpg.plp ",
+  name: "UNISEX REEBOK RUNNING ZIG KINETICA II SHOES  ",
+  price: "$9999",
+  strikedoffprice: "$12000",
+  cat:"shoes",
+  per:"(38% off)",
+  cost:9999
+},
+{
+  image_url:
+    "https://content.shop4reebok.com/static/Product-GK9170/reebok_GK9170_1.jpg.plp ",
+  name: " MEN'S REEBOK TRAINING BAS POLO TEE ",
+  price: "$779",
+  strikedoffprice: "$1299",
+  cat:"t-shirts",
+  per:"(48% off)",
+  cost:779
+
+},
+{
+  image_url:
+    "https://content.shop4reebok.com/static/Product-GK9175/reebok_GK9175_1.jpg.plp",
+  name: "MEN'S REEBOK TRAINING FOUNDATION  PANTS  ",
+  price: "$1019",
+  strikedoffprice: "$1699",
+  cat:"pants",
+  per:"(38% off)",
+  cost:1019
+},
+{
+  image_url:
+    "https://content.shop4reebok.com/static/Product-GK9176/reebok_GK9176_1.jpg.plp ",
+  name: "MEN'S REEBOK TRAINING FOUNDATION PANTS  ",
+  price: "$1019",
+  strikedoffprice: "$1699",
+  cat:"pants",
+  per:"(48% off)",
+  cost:1019
+},
+{
+  image_url:
+    "https://content.shop4reebok.com/static/Product-FW0318/reebok_FW0318_1.jpg.plp ",
+  name: " MEN'S REEBOK RUNNING TREND SHOES",
+  price: "$1575",
+  strikedoffprice: "$3499",
+  cat:"shoes",
+  per:"(58% off)",
+  cost:1575
+},
+{
+  image_url:
+    " https://content.shop4reebok.com/static/Product-G57776/reebok_G57776_1.jpg.plp ",
+  name: "  MEN'S REEBOK RUNNING ZTAUR RUN SHOES ",
+  price: "$3499",
+  strikedoffprice: "$4999",
+  cat:"shoes",
+  per:"(38% off)",
+  cost:3499
+},
+{
+  image_url:
+    " https://content.shop4reebok.com/static/Product-FV9555/MEN_SWIM_SLIPPERS_FV9555_1.jpg.plp  ",
+  name: "MEN'S REEBOK SWIM ULTRA FLIP SLIPPERS   ",
+  price: "$749",
+  strikedoffprice: "$1499",
+  cat:"slipper",
+  per:"(48% off)",
+  cost:749
+},
+{
+  image_url:
+    "https://content.shop4reebok.com/static/Product-EX3994/reebok_EX3994_1.jpg.plp   ",
+  name: "  MEN'S REEBOK SWIM FLEX CONNECT SANDALS ",
+  price: "$1149",
+  strikedoffprice: "$2299",
+  cat:"slipper",
+  per:"(58% off)",
+  cost:1149
+},
+{
+  image_url:
+    " https://content.shop4reebok.com/static/Product-EX4287/reebok_EX4287_1.jpg.plp  ",
+  name: " MEN'S REEBOK RUNNING GENESIS RUNNER SHOE  ",
+  price: "$1620",
+  strikedoffprice: "$3599",
+  cat:"shoes",
+  per:"(58% off)",
+  cost:1620
+},
+{
+  image_url:
+    " https://content.shop4reebok.com/static/Product-GK9180/reebok_GK9180_1.jpg.plp  ",
+  name: " MEN'S REEBOK TRAINING RUNNER SHORTS  ",
+  price: "$779",
+  strikedoffprice: "$1299",
+  cat:"pants",
+  per:"(48% off)",
+  cost:799
+},
+{
+  image_url:
+    " https://content.shop4reebok.com/static/Product-HB5732/reebok_HB5732_1.jpg.plp  ",
+  name: " MEN REEBOK CLASSICS TRACKSUIT HOODIE  ",
+  price: "$3499",
+  strikedoffprice: "$4999",
+  cat:"hoodie",
+  per:"(38% off)",
+  cost:3499
+
+},
+{
+  image_url:
+    " https://content.shop4reebok.com/static/Product-HB5733/reebok_HB5733_1.jpg.plp  ",
+  name: "MEN'S REEBOK CLASSIC TRACKSUIT GOLF HOODIE   ",
+  price: "$3499",
+  strikedoffprice: "$4999",
+  cat:"hoodie",
+  per:"(38% off)",
+  cost:3499
+},
+{
+  image_url:
+    "https://content.shop4reebok.com/static/Product-FQ5364/reebok_FQ5364_1.jpg.plp   ",
+  name: " UNISEX REEBOK TRAINING ACTIVE  BAG ",
+  price: "$1399",
+  strikedoffprice: "$2799",
+  cat:"bag",
+  per:"(58% off)",
+  cost:1399
+},
+{
+  image_url:
+    "https://content.shop4reebok.com/static/Product-FW0318/reebok_FW0318_1.jpg.plp ",
+  name: " MEN'S REEBOK RUNNING TREND RUNNER SHOES",
+  price: "$1575",
+  strikedoffprice: "$3499",
+  cat:"shoes",
+  per:"(58% off)",
+  cost:1575
+},
+{
+  image_url:
+    "https://content.shop4reebok.com/static/Product-G57705/reebok_G57705_1.jpg.plp",
+  name: "UNISEX REEBOK CLASSICS  BASKETBALL SHOES",
+  price: "$3919",
+  strikedoffprice: "$5599",
+  cat:"shoes",
+  per:"(48% off)",
+  cost:3919
+
+},
+{
+  image_url:
+    "https://content.shop4reebok.com/static/Product-FW0344/reebok_FW0344_1.jpg.plp",
+  name: "MEN'S REEBOK RUNNING RUN FUSION  SHOES",
+  price: "$1620",
+  strikedoffprice: "$3599",
+  cat:"shoes",
+  per:"(63% off)",
+  cost:1620
+},
+{
+  image_url:
+    "https://content.shop4reebok.com/static/Product-EX4272/reebok_EX4272_1.jpg.plp",
+  name: "MEN'S REEBOK RUNNING QUICK DRIFTER SHOES",
+  price: "$1620",
+  strikedoffprice: "$3599",
+  cat:"shoes",
+  per:"(63% off)",
+  cost:1620
+},
+{
+  image_url:
+    "https://content.shop4reebok.com/static/Product-H02293/reebok_H02293_1.jpg.plp",
+  name: "MEN'S REEBOK DYNAMIC ZIGZAG SHOES",
+  price: "$7599",
+  strikedoffprice: "$9999",
+  cat:"shoes",
+  per:"(35% off)",
+  cost:7599
+},
+{
+  image_url:
+    "https://content.shop4reebok.com/static/Product-FV9551/MEN_SWIM_SLIPPERS_FV9551_1.jpg.plp",
+  name: "MEN'S REEBOK SWIM SUPERSOFT FLIP SLIPPERS",
+  price: "$909",
+  strikedoffprice: "$1299",
+  cat:"slipper",
+  per:"(31% off)",
+  cost:909
+},
+{
+  image_url:
+    "https://content.shop4reebok.com/static/Product-HC3528/reebok_HC3528_1.jpg.plp",
+  name: "MEN'S REEBOK TRAINING ACTIVE BASIC POLO TEE",
+  price: "$779",
+  strikedoffprice: "$1299",
+  cat:"t-shirts",
+  per:"(48% off)",
+  cost:779
+},
+{
+  image_url:
+    "https://content.shop4reebok.com/static/Product-HF3794/reebok_HF3794_01.JPG.plp ",
+  name: "MEN'S REEBOK TRAINING ACTIVE MOVE TEE ",
+  price: "$1749",
+  strikedoffprice: "$2499",
+  cat:"t-shirts",
+  per:"(58% off)",
+  cost:1749
+},
+{
+  image_url:
+    "https://content.shop4reebok.com/static/Product-HG5456/reebok_HG5456_1.jpg.plp",
+  name: "MEN'S REEBOK FITNESS TRAINING  SWEATSHIRT",
+  price: "$1079",
+  strikedoffprice: "$1799",
+  cat:"t-shirts",
+  per:"(48% off)",
+  cost:1079
+},
+];
+
+localStorage.setItem("mensDataLs",JSON.stringify(mensData));
+
+
+let addCartArr=JSON.parse(localStorage.getItem("addTCart")) || [];
+
+
+displayPage(mensLs);
+
+function displayPage(mensLs){
+  document.querySelector("#container").innerHTML="";
+  mensLs.forEach(function(elem){
+    let box=document.createElement("div");
+    
+    let proImg=document.createElement("img");
+    proImg.setAttribute("src",elem.image_url);
+
+    let name=document.createElement("P");
+    name.innerText=elem.name;
+
+    let price=document.createElement("p");
+    price.innerText=elem.price;
+
+    let strprice=document.createElement("p");
+    strprice.innerText=elem.strikedoffprice;
+
+    let percentage=document.createElement("p");
+    percentage.innerText=elem.per
+
+    let btn=document.createElement("button");
+    btn.innerText="Add To Cart";
+    btn.addEventListener("click",function(){
+        addToCart(elem);
+    });
+
+    let price_div=document.createElement("div");
+    price_div.append(strprice,price,percentage)
+
+    
+
+    
+
+    box.append(proImg,name,price_div,btn);
+
+    document.querySelector("#container").append(box);
+
+  
+});
+};
+
+
+
+// let btn=document.createElement("button");
+    // btn.innerText="Add To Cart";
+    // btn.addEventListener("click",function(){
+    //     addToCart(elem);
+    // });
+
+function addToCart(elem){
+      addCartArr.push(elem);
+      localStorage.setItem("addTCart",JSON.stringify(addCartArr));
+      alert("added to cart")
+      window.location.href="cart.html"
+    
+    }
+
+
+   
+</script>

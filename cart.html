@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            font-family: Suisse Intl,Helvetica Neue,Helvetica,Arial,sans-serif;
+        }
+        #main_nav{
+            border-bottom: 1px solid black;
+           
+           
+        }
+        #navbar{
+            display: flex;
+            
+            justify-content:flex-end;
+
+        }
+        #first{
+            display: flex;
+            /* border: 1px solid blue; */
+            width: 20%;
+            justify-content: space-around;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 12px;
+           
+        }
+        #first>div:last-child{
+            display: flex;
+            width: 38%;
+            /* border: 1px solid green; */
+            justify-content: space-between;
+        }
+        #first>div:last-child>div:last-child{
+          color: white;
+          background-color: black;
+          padding: 0px 10px;
+          font-size: 14px;
+        }
+        #help{
+            text-align: center;
+            font-family: Suisse Intl,Helvetica Neue,Helvetica,Arial,sans-serif;
+            font-size: 13px;
+            border: none;
+        }
+        #second{
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 10px;
+            
+        }
+        #second>div:first-child{
+            font-weight: bold;
+            display: flex;
+            width:25% ;
+            font-size: 18px;
+            justify-content: space-around;
+            align-items: center;
+            
+            
+        }
+        #ppg>a{
+            text-decoration: none;
+        }
+        #second>div>div>a{
+            color: black;
+        }
+        #second>div:first-child>div:first-child{
+            font-size: 40px;
+            font-weight: 1000;
+        }
+        #searchbar{
+            width: 40%;
+            padding: 0px;
+            
+        }
+        #cartlogo{
+          
+          height: 55px;
+          width: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background:url(https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-svg-png-icon-download-28.png) ;
+          background-size: contain;
+          background-repeat: no-repeat;
+          cursor: pointer;
+        }
+        #cartlogo>p{
+        margin-bottom: 40px;
+          font-size: 16px;
+          font-weight: bold;
+          margin-left: 16px;
+        }
+        #cartlogo>a{
+            color: black;
+          font-size: 18px;
+          font-weight:bold;
+          margin-left: -60px;
+          text-decoration: none;
+        }
+
+        /* navbar css end */
+
+         /* footer start  */
+
+         #footer{
+            width: 100%;
+            height: auto;
+            background-color:#f5f4f2 ;
+            display: flex;
+        }
+        #fhalftr{
+            height: 100%;
+            width: 50%;
+            
+            text-align: center;
+            
+           
+        }
+        #fhalftr>p{
+            font-size: 14px;
+            margin-right: 20px;
+        }
+        #fhalftr>img{
+            width: 40%;
+            margin-top: 60px;
+            margin-right: 110px;
+           
+            
+        }
+        .yr{
+            font-size: 14px;
+            text-align: left;
+            margin-left: 150px;
+        }
+
+        #shalftr{
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 70px;
+            margin-bottom: 30px;
+        }
+        #shalftr>div>p{
+            font-size: 14px;
+        }
+        
+
+
+        /* footer end  */
+
+        #cartpage{
+            border: 1px solid red;
+            height: auto;
+          
+            
+        }
+        #immg{
+            width: 15%;
+            height: 200px;
+            border: 1px solid blue;
+           
+        }
+        #immg>img{
+            height: 100%;
+            width: 100%;
+        }
+        #qty{
+            margin-top: 20px;
+            display: flex;
+            height: 20px;
+            align-items: center;
+            justify-content: center;
+            
+           
+        }
+        #qty>select{
+          width: 60px;
+          margin-left: 10px;
+          font-size: 18px;
+          border: none;
+        }
+        #cart1{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+       #paytotal{
+        width: 100%;
+        height: 150px;
+        border: 1px solid blue;
+        display: flex;
+        justify-content: space-between;
+        
+       }
+       #pay{
+        margin-left: 30px;
+       }
+       #total{
+            margin-right: 200px;
+       }
+       #remove{
+        margin-top: 30px; 
+        width: 100px;
+        height: 20px;
+       }
+       #chechout{
+        width: 120px;
+        height: 30px;
+       }
+       #chechout>a{
+        font-size: 20px;
+        color: black;
+       }
+    </style>
+</head>
+<body>
+    <div id="main_nav">
+        <div id="navbar">
+            <div id="first">
+                <div>IN-US$</div>
+                <div>
+                    <select name="Help" id="help">
+                        <option value="">Help</option>
+                        <option value="">Help center</option>
+                        <option value="">Contact us</option>
+                        <option value="">About us</option>
+                        <option value="">Careers</option>
+                    </select>
+                </div>
+                <div>
+                    <div id="emptylog"><a style="color:black; text-decoration: none;" href="login.html">Sign in</a> </div>
+                    <div id="emptyjoin"><a style="color:white; text-decoration: none;" href="signup.html">Join</a></div>
+                </div>
+            </div>
+    
+            <!-- first div end -->
+    
+            
+        </div>
+        <div id="second">
+            <div>
+                <div><a href="index.html">LYST</a> </div>
+                <div id="ppg"><a href="womens.html">WOMEN</a> </div>
+                <div id="ppg"><a href="mens.html">MEN</a> </div>
+                
+            </div>
+            <input id="searchbar" type="text" placeholder="  SEARCH ( E.G ACNE JEANS )">
+            <div id="cartlogo"><a href="cart.html">CART</a>
+                <p>0</p>
+              </div>
+        
+        </div>
+    </div>
+
+    <!-- full nav bar end -->
+
+    <div id="cartpage">
+        
+        
+
+    </div>
+        <div id="paytotal">
+            <div id="pay">
+                <p>Accepted Payment Method</p>
+                <img width="25%" src="Screenshot (175).png" alt="">
+                <p>Need help ? call 1888 282 6060 or chat with us</p>
+                <p>Shipping internationally</p>
+            </div>
+            <div id="total">
+                <h3 id="total_price"></h3>
+                <button id="checkout"><a href="checkout.html">Check out</a> </button>
+            </div>
+
+
+        </div>
+        
+       
+
+    
+
+     <!-- footer start -->
+
+   <div id="footer">
+    <div id="fhalftr">
+        <img src="Screenshot (172).png" alt=""> <br>
+        <p>Learn about the Lyst app for iphone, iPad and Android</p> <br>
+        <p class="yr">@ 2022 Lyst</p>
+    </div>
+
+    <div id="shalftr">
+        <div>
+            <h3>INTERNATIONAL</h3>
+            <p>Lyst - AU</p>
+            <p>Lyst - CA</p>
+            <p>Lyst - UK</p>
+            <p>Lyst - Osterreich</p>
+            <p>Lyst - Schweiz</p>
+            <p>Lyst -Schweiz</p>
+            <p>Lyst - Deutschland</p>
+            <p>Lyst - Espana</p>
+            <p>Lyst - France</p>
+            <p>Lyst - Italia</p>
+            <p>Lyst - Belgie</p>
+            <p>Lyst -Nederland</p>
+           
+        </div>
+        <div>
+            <h3>HELP AND INFO</h3>
+            <p>Help center</p>
+            <p>About us</p>
+            <p>Shipping policy</p>
+            <p>Returns policy</p>
+            <p>Payments</p>
+            <p>Refund policy</p>
+            <p>Developers</p>
+            <p>Careers</p>
+            <p>Contact</p>
+            <p>Terms $ conditions</p>
+            <p>Privacy & cookie policy</p>
+            <p>Intellectual property</p>
+            <p>Categories</p>
+            <p>Become a partner</p>
+            <p>Lyst Insight</p>
+            <p>Lyst News</p>
+        </div>
+
+    </div>
+</div>
+
+ <!-- footer end -->
+
+</body>
+</html>
+
+<script>
+
+let indexArr=JSON.parse(localStorage.getItem("loginData"));
+
+console.log(indexArr)
+
+if(localStorage.getItem("flag_sta")){
+    document.querySelector("#emptylog").innerHTML="Hi"+" "+ indexArr.name;
+   
+
+    document.querySelector("#emptyjoin").innerHTML="";
+}
+    let aCartArr=JSON.parse(localStorage.getItem("addTCart"));
+
+    var bagArr = JSON.parse(localStorage.getItem("bag1"))||[];
+
+    if(aCartArr.length==0){
+        let div1=document.createElement("div");
+        div1.innerText="Favourite Cart Is Empty Right Now"
+        div1.innerText = "Why Don't You Go On Product Page And Add Something In Bag"
+        
+        var butto=document.createElement("button")
+        butto.setAttribute("id","productbutt")
+        butto.addEventListener("click",emptyCart);
+        butto.innerText = "GO TO PRODUCT PAGE"
+        div1.append(butto);
+        document.querySelector("#cartpage").append(div1)
+        function emptyCart(){
+            window.location.href="mens.html"
+        }
+    }
+
+
+    displayProduct(aCartArr);
+
+  
+
+    function displayProduct(aCartArr){
+        document.querySelector("#cartpage").innerHTML="";
+
+        let sum=0;
+        aCartArr.forEach(function(elem,ind){
+            let pro=document.createElement("div");
+            pro.setAttribute("id","cart1");
+
+            let imgdiv=document.createElement("div");
+            imgdiv.setAttribute("id","immg")
+            let proimg=document.createElement("img");
+            proimg.setAttribute("src",elem.image_url);
+            imgdiv.append(proimg)
+            let proName=document.createElement("p");
+            proName.innerText=elem.name;
+
+            // let quantity=document.createElement("div");
+            // quantity.setAttribute("id","qty");
+            // let qttl=document.createElement("p");
+            // qttl.innerText="Qty";
+
+            // let sel=document.createElement("select");
+          
+            // for(var i=1;i<=10;i++){
+            //     let opt=document.createElement("option");
+            //     opt.setAttribute("value",i)
+            //     opt.innerText=i;
+            //     sel.append(opt)
+            // }
+
+            // quantity.append(qttl,sel);
+
+            
+
+            let proPrice=document.createElement("h4");
+            proPrice.innerText="$"+elem.cost
+
+            
+           
+                sum=sum+elem.cost
+                let total_price= document.querySelector("#total_price");
+               total_price.innerText="Total = $"+sum;
+               let tp=localStorage.setItem("total_price_cart",JSON.stringify(total_price.innerText))
+
+            
+           
+
+            let btn=document.createElement("button");
+            btn.setAttribute("id","remove");
+            btn.innerText="Remove";
+            btn.addEventListener("click",function(){
+                deletePro(ind);
+            })
+
+
+
+
+            pro.append(imgdiv,proName,proPrice,btn);
+
+            document.querySelector("#cartpage").append(pro);
+
+           document.querySelector("#cartlogo>p").innerText=aCartArr.length;
+            
+
+        })
+        
+    }
+
+    function deletePro(ind){
+        aCartArr.splice(ind,1);
+        console.log(aCartArr)
+        localStorage.setItem("addTCart",JSON.stringify(aCartArr));
+        if(aCartArr.length==0){
+           
+            localStorage.setItem("total_price_cart",JSON.stringify(0))
+            let total_price= document.querySelector("#total_price");
+               total_price.innerText="Total = $"+0;
+        }
+        displayProduct(aCartArr);
+        
+    }
+
+   
+
+</script>

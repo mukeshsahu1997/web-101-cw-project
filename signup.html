@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your World of Fashion | Lyst</title>
+    <link rel="icon" href="/lyst.png">
+    <style>
+        *{
+            font-family: Suisse Intl,Helvetica Neue,Helvetica,Arial,sans-serif;
+        }
+        #main_nav{
+            border-bottom: 1px solid black;
+           
+           
+        }
+        #navbar{
+            display: flex;
+            
+            justify-content:flex-end;
+
+        }
+        #first{
+            display: flex;
+            /* border: 1px solid blue; */
+            width: 20%;
+            justify-content: space-around;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 12px;
+           
+        }
+        #first>div:last-child{
+            display: flex;
+            width: 38%;
+            /* border: 1px solid green; */
+            justify-content: space-between;
+        }
+        #first>div:last-child>div:last-child{
+          color: white;
+          background-color: black;
+          padding: 0px 10px;
+          font-size: 14px;
+        }
+        #help{
+            text-align: center;
+            font-family: Suisse Intl,Helvetica Neue,Helvetica,Arial,sans-serif;
+            font-size: 13px;
+            border: none;
+        }
+        #second{
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 10px;
+            
+        }
+        #second>div:first-child{
+            font-weight: bold;
+            display: flex;
+            width:25% ;
+            font-size: 18px;
+            justify-content: space-around;
+            align-items: center;
+            
+            
+        }
+        #ppg>a{
+            text-decoration: none;
+        }
+        #second>div>div>a{
+            color: black;
+        }
+        #second>div:first-child>div:first-child{
+            font-size: 40px;
+            font-weight: 1000;
+        }
+        #searchbar{
+            width: 40%;
+            padding: 0px;
+            
+        }
+        #cartlogo{
+          
+          height: 55px;
+          width: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background:url(https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-svg-png-icon-download-28.png) ;
+          background-size: contain;
+          background-repeat: no-repeat;
+          cursor: pointer;
+        }
+        #cartlogo>p{
+        margin-bottom: 40px;
+          font-size: 16px;
+          font-weight: bold;
+          margin-left: 16px;
+        }
+        #cartlogo>a{
+            color: black;
+          font-size: 18px;
+          font-weight:bold;
+          margin-left: -60px;
+          text-decoration: none;
+        }
+
+        /* navbar css end */
+        #mainsl{
+            margin: auto;
+           
+            width: 60%;
+            display: flex;
+            height: auto;
+        }
+        #main_p{
+           text-align: center;
+           
+            width: 50%;
+            height: 100%;
+        }
+        #main_p2{
+           
+            width: 50%;
+            background-color: rgb(197, 169, 223);
+           
+        }
+        #mlyst{
+            margin: auto;
+            width: 80%;
+            background-color: white;
+            margin-top: 100px;
+          
+        }
+        #hhh4{
+           margin-left: 20px;
+           padding-top: 40px;
+           margin-bottom: -5px;
+        }
+        #mlyst>div{
+            margin-bottom: -15px;
+            display: flex;
+            margin-left: 20px;
+           
+        }
+        #mlyst>div>p{
+                margin-left: 30px;
+        }
+        #lslink{
+            border: 1px solid rgb(216, 206, 206);
+            
+            width: 80%;
+            height: 30px;
+            margin: auto;
+            margin-top: 30px;
+            display: flex;
+           
+
+           
+        }
+        #cl{
+            text-align: center;
+            width: 50%;
+            height: 100%;
+            color: white;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            
+        }
+        #cl>a{
+            color: white;
+            text-decoration: none;
+            
+        }
+        #cl2{
+            padding-left: 10px;
+            color: black;
+            height: 100%;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #cl2>a{
+            color: black;
+            text-decoration: none;
+        }
+        #for_m{
+            width: 80%;
+           
+           text-align: left;
+           margin: auto;
+          
+        }
+        #form{
+            margin: auto;
+            height: auto;
+        }
+        #form>label{
+            font-size: 18px;
+           
+        }
+        #form>.inp{
+            border: 1px solid rgb(216, 206, 206);
+            width: 95%;
+            height: 30px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+        #subm{
+            font-family: Suisse Intl,Helvetica Neue,Helvetica,Arial,sans-serif;
+            font-size: 16px;
+            width: 95%;
+            height: 40px;
+            margin-bottom: 10px; 
+            margin-top: 20px;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="main_nav">
+        <div id="navbar">
+            <div id="first">
+                <div>IN-US$</div>
+                <div>
+                    <select name="Help" id="help">
+                        <option value="">Help</option>
+                        <option value="">Help center</option>
+                        <option value="">Contact us</option>
+                        <option value="">About us</option>
+                        <option value="">Careers</option>
+                    </select>
+                </div>
+                <div>
+                    <div><a style="color:black; text-decoration: none;" href="login.html">Sign in</a> </div>
+                    <div><a style="color:white; text-decoration: none;" href="signup.html">Join</a></div>
+                </div>
+            </div>
+    
+            <!-- first div end -->
+    
+            
+        </div>
+        <div id="second">
+            <div>
+                <div><a href="index.html">LYST</a> </div>
+                <div id="ppg"><a href="womens.html">WOMEN</a> </div>
+                <div id="ppg"><a href="mens.html">MEN</a> </div>
+                
+            </div>
+            <input id="searchbar" type="text" placeholder="  SEARCH ( E.G ACNE JEANS )">
+            <div id="cartlogo"><a href="cart.html">CART</a>
+                <p>0</p>
+              </div>
+        
+        </div>
+    </div>
+
+    <!-- full nav bar end -->
+
+    <div id="mainsl">
+        <div id="main_p">
+            <div id="lslink">
+                <div id="cl"><a href="signup.html">New to Lyst?</a> </div>
+                <div id="cl2"><a href="login.html"> Already a member</a></div>
+
+                
+            </div>
+            <h2>Search thousands of fashion <br> brands and stores all in one <br> place</h2>
+            <p style="color: gray ;">We just need a few details from you first.</p>
+            
+            <div id="for_m">
+                <form id="form" action="">
+                    <label for="">Full Name</label><br>
+                    <input class="inp" id="name" type="text" placeholder="Enter your full name"> <br>
+                    <label for="">Email address</label><br>
+                    <input class="inp" id="email" type="email" placeholder="Enter your email address"> <br>
+                    <label for="">Password</label> <br>
+                    <input class="inp" id="password" type="number" placeholder="min 8 character" > <br>
+                    <input type="checkbox" name="" id="">
+                    I would like to hear about products, services, and sales, including personalized email alerts from Lyst. You can unsubscribe at any time. <br>
+                    
+                    <input id="subm" type="submit" value="Join Lyst">
+                   <p style="text-align: justify;">By creating an account, you consent to Lyst’s <a href="">Terms & Conditions.</a>  To learn more about how Lyst uses and protects your personal data, please read Lyst’s <a href="">Privacy Policy.</a> </p> 
+                </form>
+
+            </div>
+            
+        
+        </div>
+        <div id="main_p2">
+            <div id="mlyst">
+                <h4 id="hhh4">As a Lyst member you can...</h4>
+                <div>
+                    <img src="save.svg" alt="">
+                    <p>Save your searches</p>
+                </div>
+                <div>
+                    <img style="width: 20px; " src="heart.svg" alt="">
+                    <p>Creat a wishlist</p>
+                </div>
+                <div>
+                    <img src="notifications-active.svg" alt="">
+                    <p style="margin-bottom: 30px;">Get alerts on your items</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    let signupArr=JSON.parse(localStorage.getItem("signupData"))||[];
+
+    document.querySelector("#form").addEventListener("submit",storeSignup);
+
+    function storeSignup(event){
+       event.preventDefault();
+
+        let signupObj={
+            name:document.querySelector("#name").value,
+            email:document.querySelector("#email").value,
+            password:document.querySelector("#password").value,
+        }
+
+        
+        if(signupObj.name=="" || signupObj.email=="" || signupObj.password ==""){
+        alert("Plese Fill All The Details")
+        }
+        else{
+            signupArr.push(signupObj);
+    
+
+        localStorage.setItem("signupData",JSON.stringify(signupArr));
+
+        window.location.href="login.html"
+
+        }
+
+    };
+
+</script>

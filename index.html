@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your World of Fashion | Lyst</title>
+    <link rel="icon" href="/lyst.png">
+    <style>
+        *{
+            font-family: Suisse Intl,Helvetica Neue,Helvetica,Arial,sans-serif;
+        }
+        #main_nav{
+            border-bottom: 1px solid black;
+           
+           
+        }
+        #navbar{
+            display: flex;
+            
+            justify-content:flex-end;
+
+        }
+        #first{
+            display: flex;
+            /* border: 1px solid blue; */
+            width: 20%;
+            justify-content: space-around;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 12px;
+           
+        }
+        #first>div:last-child{
+            display: flex;
+            width: 38%;
+            /* border: 1px solid green; */
+            justify-content: space-between;
+        }
+        #first>div:last-child>div:last-child{
+          color: white;
+          background-color: black;
+          padding: 0px 10px;
+          font-size: 14px;
+        }
+        #help{
+            text-align: center;
+            font-family: Suisse Intl,Helvetica Neue,Helvetica,Arial,sans-serif;
+            font-size: 13px;
+            border: none;
+        }
+        #second{
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 10px;
+            
+        }
+        #second>div:first-child{
+            font-weight: bold;
+            display: flex;
+            width:25% ;
+            font-size: 18px;
+            justify-content: space-around;
+            align-items: center;
+            
+            
+        }
+        #ppg>a{
+            text-decoration: none;
+        }
+        #second>div>div>a{
+            color: black;
+        }
+        #second>div:first-child>div:first-child{
+            font-size: 40px;
+            font-weight: 1000;
+        }
+        #searchbar{
+            width: 40%;
+            padding: 0px;
+            
+        }
+        #cartlogo{
+          
+          height: 55px;
+          width: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background:url(https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-svg-png-icon-download-28.png) ;
+          background-size: contain;
+          background-repeat: no-repeat;
+          cursor: pointer;
+        }
+        #cartlogo>p{
+        margin-bottom: 40px;
+          font-size: 16px;
+          font-weight: bold;
+          margin-left: 16px;
+        }
+        #cartlogo>a{
+            color: black;
+          font-size: 18px;
+          font-weight:bold;
+          margin-left: -60px;
+          text-decoration: none;
+        }
+
+        /* navbar css end */
+
+        #nav_img>img{
+            width: 100%;
+            cursor: pointer;
+            border-bottom: 1px solid black;
+            margin-bottom: 70px;
+        }
+        
+        #scroll{
+           
+            display: flex;
+            overflow-x:scroll;
+            overflow-y: hidden;
+           
+           
+           
+        }
+        #tl_img{
+            display: flex;
+            width: 30%;
+            height: 300px;
+            border: 1px solid black;
+            border-left: none;
+            
+        }
+        #ttl{
+            
+            width: 25%;
+           
+        }
+        #ttl>h3{
+         transform: rotate(-90deg);
+         line-height: 1.5rem; 
+         margin-top: 120px;
+         margin-left: -70px;
+         width: 300px;
+         
+         font-weight: 500;
+         font-size: 22px;
+        
+        
+        }
+        #ttl5{
+            width: 25%;
+        }
+        #ttl5>h3{
+         transform: rotate(-90deg);
+         line-height: 1.5rem; 
+         margin-top: 110px;
+        margin-left: -90px;
+         width: 300px;
+         
+         font-weight: 500;
+         font-size: 22px;
+        }
+        #imgg{
+            width: 80%;
+        }
+        #imgg>img{
+            
+            height: 100%;
+        }
+
+        /* scroll1 end */
+
+          /* scroll2 start */
+        #scroll2{
+          
+            margin-top: 50px;
+            display: flex;
+            overflow-x:scroll;
+            overflow-y: hidden;
+           
+        }
+        #tl_img2{
+            height: 400px;
+            border: 1px solid black;
+            border-left: none;
+        }
+        #ttl2{
+           
+            height: 20%;
+        }
+        #ttl2>h3{
+            width: 300px;
+            
+            margin-left: 30px;
+            font-weight: lighter;
+            line-height: 2rem; 
+            font-size: 20px;
+        }
+        #imgg2{
+           width: 85%;
+            height: 80%;
+            
+        }
+        #imgg2>img{
+          height: 94%;
+          margin-left: 70px;
+        }
+
+          /* scroll2 end */
+
+          /* 123 div start */
+
+          #div123{
+            display: flex;
+            border: 1px solid black;
+            border-bottom: none;
+            
+            margin-top: 60px;
+            height: auto;
+           
+          }
+          #nmdiv{
+            width: 65%;
+            
+            
+            background-color: #f5f4f2;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(4,auto);
+           
+           
+          }
+          #nmdiv>div{
+            margin: auto;
+            display: flex;
+            width: 80%;
+           
+           
+           
+            }
+          #nmdiv>div>h1{ 
+            font-size: 100px;
+            margin-bottom: -20px;
+           
+            
+          }
+          #nmdiv>div>h2{
+            font-weight: 500;
+            font-size: 30px;
+          }
+          #nmdiv>div>p{
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.5rem;
+            
+          }
+          #cldiv{
+            display: flex;
+            width: 35%;
+           
+            background-color: greenyellow;
+          }
+
+
+           /* 123 div end */
+
+           /* cldiv start */
+
+           #cldiv>div:first-child{
+            width: 80%;
+            display: flex;
+            
+            align-items: center;
+            justify-content: center;
+           }
+           #cldiv>div:first-child:hover{
+            background-color: rgb(191, 161, 219);
+            cursor: pointer;
+           }
+           #cldiv>div:first-child>h1{
+            font-size: 40px;
+            font-weight: 600;
+           }
+           #cldiv>div:first-child>h1>button{
+            padding: 10px 50px;
+            color: white;
+            background-color: black;
+            font-weight: bold;
+            border: 0px;
+           }
+            /* cldiv end */
+
+            /* most wanted start */
+            #mwdiv{
+                border: 1px solid black;
+                height: 300px;
+                display: flex;
+                
+            }
+            #mwdiv>div:last-child{
+                margin-left: -80px;
+               height: 100%;
+                width: 90%;
+               
+                display: grid;
+                grid-template-columns: repeat(5,1fr);
+                grid-template-rows: repeat(2,auto);
+                
+            }
+            #mwdiv>div:last-child>div{
+              
+                width: 80%;
+                
+            }
+            #mwdiv>div:last-child>div>h2{
+                font-weight: 500;
+                font-size: 20px;
+                margin-top: 30px;
+               
+            }
+            #mwdiv>div:last-child>div>h2:hover{
+                color: blueviolet;
+                cursor: pointer;
+            }
+            #mwdiv>div:first-child{
+                width: 10%;
+                height: 100%;
+                margin-left: 10px;
+               
+                
+            }
+            #ttl3>h2{
+            transform: rotate(-90deg);
+            line-height: 2rem; 
+            margin-top: 120px;
+            margin-left: -100px;
+            font-weight: 400;
+            font-size: 30px;
+        }
+            /* most wanted end */
+
+        /* footer start  */
+
+        #footer{
+            width: 100%;
+            height: auto;
+            background-color:#f5f4f2 ;
+            display: flex;
+        }
+        #fhalftr{
+            height: 100%;
+            width: 50%;
+            
+            text-align: center;
+            
+           
+        }
+        #fhalftr>p{
+            font-size: 14px;
+            margin-right: 20px;
+        }
+        #fhalftr>img{
+            width: 40%;
+            margin-top: 60px;
+            margin-right: 110px;
+           
+            
+        }
+        .yr{
+            font-size: 14px;
+            text-align: left;
+            margin-left: 150px;
+        }
+
+        #shalftr{
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 70px;
+            margin-bottom: 30px;
+        }
+        #shalftr>div>p{
+            font-size: 14px;
+        }
+        
+
+
+        /* footer end  */
+         
+
+           
+      
+       
+    </style>
+</head>
+<body>
+
+    <div id="main_nav">
+        <div id="navbar">
+            <div id="first">
+                <div>IN-US$</div>
+                <div>
+                    <select name="Help" id="help">
+                        <option value="">Help</option>
+                        <option value="">Help center</option>
+                        <option value="">Contact us</option>
+                        <option value="">About us</option>
+                        <option value="">Careers</option>
+                    </select>
+                </div>
+                <div>
+                    <div id="emptylog"><a style="color:black; text-decoration: none;" href="login.html">Sign in</a> </div>
+                    <div id="emptyjoin"><a style="color:white; text-decoration: none;" href="signup.html">Join</a></div>
+                </div>
+            </div>
+    
+            <!-- first div end -->
+    
+            
+        </div>
+        <div id="second">
+            <div>
+                <div><a href="index.html">LYST</a> </div>
+                <div id="ppg"><a href="womens.html">WOMEN</a> </div>
+                <div id="ppg"><a href="mens.html">MEN</a> </div>
+                
+            </div>
+            <input id="searchbar" type="text" placeholder="  SEARCH ( E.G ACNE JEANS )">
+            <div id="cartlogo"><a href="cart.html">CART</a>
+                <p>0</p>
+              </div>
+        
+        </div>
+    </div>
+
+    <!-- full nav bar end -->
+
+    <div id="nav_img">
+        <img src="https://cdna.lystit.com/cms/ENG_header_XL_9f9e2af236_615828663f.jpg" alt="">
+    </div>
+    
+    <!-- scroll 1 start -->
+
+    <div id="scroll">
+        <div id="tl_img">
+            <div id="ttl">
+                <h3>CRISP MONOCHROME</h3>
+            </div>
+            <div id="imgg">
+                <img src="https://cdna.lystit.com/cms/Image_from_i_OS_570_8c4ba5ce61.png" alt="">
+            </div>
+        </div>
+        <div id="tl_img">
+            <div id="ttl">
+                <h3>ONE STEP AHEAD</h3>
+            </div>
+            <div id="imgg">
+                <img src="https://cdna.lystit.com/cms/OSA_24_03_22_09a1fa2732.jpeg" alt="">
+            </div>
+        </div>
+        <div id="tl_img">
+            <div id="ttl">
+                <h3>REFINED GLAMOUR</h3>
+            </div>
+            <div id="imgg">
+                <img src="https://cdna.lystit.com/cms/REFINED_GLAMOUR_c966d97813.jpeg" alt="">
+            </div>
+        </div>
+        <div id="tl_img">
+            <div id="ttl">
+                <h3>NEW CLASSICS</h3>
+            </div>
+            <div id="imgg">
+                <img src="https://cdna.lystit.com/cms/NEW_CLASSICS_f5f19784b9.jpeg" alt="">
+            </div>
+        </div>
+        <div id="tl_img">
+            <div id="ttl">
+                <h3>30 UNDER 300</h3>
+            </div>
+            <div id="imgg">
+                <img src="https://cdna.lystit.com/cms/17537008_38224404_800_7b2d22a8aa.png" alt="">
+            </div>
+        </div>
+        
+        
+        
+    </div>
+    <div id="scroll">
+        <div id="tl_img">
+            <div id="ttl5">
+                <h3>SHOP THE SALE - UP TO <br> 60% OFF ON 24S</h3>
+            </div>
+            <div id="imgg">
+                <img src="https://cdna.lystit.com/cms/UK_US_DE_065c7e8506.png" alt="">
+            </div>
+        </div>
+        <div id="tl_img">
+            <div id="ttl5">
+                <h3>ISTO - LUXURY <br> ESSENTIALS FOR MEN. <br> 100% ORGANIC</h3>
+            </div>
+            <div id="imgg">
+                <img src="https://cdna.lystit.com/cms/ISTO_Lyst_03_4b0bae6b23.jpg" alt="">
+            </div>
+        </div>
+        <div id="tl_img">
+            <div id="ttl5">
+                <h3>DEMY BY DEMLYEE BOLD <br> BRIGHT, +ANYTHING BUT <br> BASIC</h3>
+            </div>
+            <div id="imgg">
+                <img src="https://cdna.lystit.com/cms/DEMY_BY_DEMYLEE_LYST_21f6f7e27f.jpg" alt="">
+            </div>
+        </div>
+        <div id="tl_img">
+            <div id="ttl5">
+                <h3>SHOP MY BEACHY SIDE - <br> HAND CROCHET <br> RESORTWEAR</h3>
+            </div>
+            <div id="imgg">
+                <img  style="height:150% ;" src="https://cdna.lystit.com/cms/11bk_RS_Do_e3e888eb52.jpeg" alt="">
+            </div>
+        </div>
+        <div id="tl_img">
+            <div id="ttl5">
+                <h3>SHOP THE JAUNT - <br> DESIGNERS FAVS UP TO <br> 70% OFF</h3>
+            </div>
+            <div id="imgg">
+                <img src="https://cdna.lystit.com/cms/The_Jaunt_600x600_Lyst_bbf0bd8c54.png" alt="">
+            </div>
+        </div>
+        
+        
+        
+    </div>
+
+    <!-- scroll1 end -->
+
+    <!-- scroll2 start -->
+
+    <div id="scroll2">
+        <div style="background-color: #f5f4f2" id="tl_img2">
+            <div id="ttl2">
+                <h1 style=" font-size: 60px; line-height:2rem; font-weight: 500; padding: 20px;">BREAKOUT <BR></BR> BRANDS</h1>
+            </div>
+            <!-- <div id="imgg2">
+               
+                <img src="https://cdna.lystit.com/cms/Image_from_i_OS_570_8c4ba5ce61.png" alt="">
+            </div> -->
+        </div>
+        <div id="tl_img2">
+            <div id="ttl2">
+                <h3>PATOU</h3>
+            </div>
+            <div id="imgg2">
+               
+                <img src="https://cdna.lystit.com/cms/My_Post_81_76121ffa01.jpg" alt="">
+            </div>
+        </div>
+        <div id="tl_img2">
+            <div id="ttl2">
+                <h3>GUCCI</h3>
+            </div>
+            <div id="imgg2">
+               
+                <img src="https://cdna.lystit.com/cms/designer_rail_gucci_eca9e74796.jpg" alt="">
+            </div>
+        </div>
+        <div id="tl_img2">
+            <div id="ttl2">
+                <h3>SAINT LAURENT</h3>
+            </div>
+            <div id="imgg2">
+               
+                <img src="https://cdna.lystit.com/cms/designer_rail_saint_laurent_2031eb80f7.jpeg" alt="">
+            </div>
+        </div>
+        <div id="tl_img2">
+            <div id="ttl2">
+                <h3>OFF-WHITE C/O VIRGIL ABLOH</h3>
+            </div>
+            <div id="imgg2">
+               
+                <img src="https://cdna.lystit.com/cms/designer_rail_off_white_co_virgil_abloh_d8c6b37a9f.jpeg" alt="">
+            </div>
+        </div>
+        <div id="tl_img2">
+            <div id="ttl2">
+                <h3>BALANCIAGA</h3>
+            </div>
+            <div id="imgg2">
+               
+                <img src="https://cdna.lystit.com/cms/designer_rail_balenciaga_215cbc0fe0.jpeg" alt="">
+            </div>
+        </div>
+        <div id="tl_img2">
+            <div id="ttl2">
+                <h3>NIKE</h3>
+            </div>
+            <div id="imgg2">
+               
+                <img src="https://cdna.lystit.com/cms/designer_rail_nike_c3045162ba.png" alt="">
+            </div>
+        </div>
+        <div id="tl_img2">
+            <div id="ttl2">
+                <h3>DOLCE & GABBANA</h3>
+            </div>
+            <div id="imgg2">
+               
+                <img src="https://cdna.lystit.com/cms/designer_rail_dolce_gabbana_bcb7049bb0.jpeg" alt="">
+            </div>
+        </div>
+        <div id="tl_img2">
+            <div id="ttl2">
+                <h3>MONCLER</h3>
+            </div>
+            <div id="imgg2">
+               
+                <img src="https://cdna.lystit.com/cms/designer_rail_moncler_bcdcdc131d.jpeg" alt="">
+            </div>
+        </div>
+        <div id="tl_img2">
+            <div id="ttl2">
+                <h3>VELENTINO</h3>
+            </div>
+            <div id="imgg2">
+               
+                <img src="https://cdna.lystit.com/cms/designer_rail_valentino_421c18fab0.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="scroll2">
+        <div id="tl_img2">
+            <div id="ttl2">
+                <h3>ETON SHIRTS</h3>
+            </div>
+            <div id="imgg2">
+               
+                <img src="https://cdna.lystit.com/cms/eton_sweden_shirt_da4fff6982.jpg" alt="">
+            </div>
+        </div>
+        <div id="tl_img2">
+            <div id="ttl2">
+                <h3>GALVAN LONDON DRESSES</h3>
+            </div>
+            <div id="imgg2">
+               
+                <img src="https://cdna.lystit.com/cms/galvan_dress_cb31d2b319.jpg" alt="">
+            </div>
+        </div>
+        <div style="background-color: #f5f4f2" id="tl_img2">
+            <div id="ttl2">
+                <h1 style=" font-size: 60px; line-height:3rem; font-weight: 500; padding: 20px;">TRENDING <br> NOW</h1>
+            </div>
+            
+        </div>
+        <div id="tl_img2">
+            <div id="ttl2">
+                <h3>ROBERTA ROLLER RABBIT <br> NIGHTWEAR AND SLEEPWEAR</h3>
+            </div>
+            <div id="imgg2">
+               
+                <img src="https://cdna.lystit.com/cms/roberta_roller_rabbit_480eb63ae6.jpg" alt="">
+            </div>
+        </div>
+        <div id="tl_img2">
+            <div id="ttl2">
+                <h3>RHUDE T-SHIRTS</h3>
+            </div>
+            <div id="imgg2">
+               
+                <img src="https://cdna.lystit.com/cms/rhude_shirt_c6bc886e07.jpg" alt="">
+            </div>
+        </div>
+        <div id="tl_img2">
+            <div id="ttl2">
+                <h3>A BATHING APE JACKETS</h3>
+            </div>
+            <div id="imgg2">
+               
+                <img src="https://cdna.lystit.com/cms/a_bathing_ape_jacket_c40f13e02f.jpg" alt="">
+            </div>
+        </div>
+        <div id="tl_img2">
+            <div id="ttl2">
+                <h3>JOHNNY WAS BEACHWEAR <br> AND SWIMWEAR OUTFITS</h3>
+            </div>
+            <div id="imgg2">
+               
+                <img src="https://cdna.lystit.com/cms/johnny_was_beachwear_812a36ae2c.jpg" alt="">
+            </div>
+        </div>
+        <div id="tl_img2">
+            <div id="ttl2">
+                <h3>CASABLANCA T-SHIRTS</h3>
+            </div>
+            <div id="imgg2">
+               
+                <img src="https://cdna.lystit.com/cms/casablanca_shirt_b83fb98040.jpg" alt="">
+            </div>
+        </div>
+       
+    </div>
+
+    <div id="scroll2">
+        <div id="tl_img2">
+            <div id="ttl2">
+                <h3>BONOBOS SHORTS</h3>
+            </div>
+            <div id="imgg2">
+               
+                <img src="https://cdna.lystit.com/cms/bonobos_shorts_6a3e83ea91.jpg" alt="">
+            </div>
+        </div>
+        <div style="background-color: #f5f4f2;" id="tl_img2">
+            <div  id="ttl2">
+                <h1 style=" font-size: 70px; line-height:4rem; font-weight: 500; padding: 20px;" >HOTRIGHT NOW</h1>
+            </div>
+            
+        </div>
+        <div id="tl_img2">
+            <div id="ttl2">
+                <h3>BELENCIAGA BEACHWEAR AND SMIMWEAR OUTFITS</h3>
+            </div>
+            <div id="imgg2">
+               
+                <img src="https://cdna.lystit.com/cms/balenciaga_swimwear_a06622c701.jpg" alt="">
+            </div>
+        </div>
+        <div id="tl_img2">
+            <div id="ttl2">
+                <h3>PANDORA BRACELETS</h3>
+            </div>
+            <div id="imgg2">
+               
+                <img src="https://cdna.lystit.com/cms/pandora_bracelets_1e97a9f038.jpg" alt="">
+            </div>
+        </div>
+        <div id="tl_img2">
+            <div id="ttl2">
+                <h3>LANVIN T-SHIRTS</h3>
+            </div>
+            <div id="imgg2">
+               
+                <img src="https://cdna.lystit.com/cms/lanvin_shirt_8ae9c5a0a3.jpg" alt="">
+            </div>
+        </div>
+        <div id="tl_img2">
+            <div id="ttl2">
+                <h3>MAISON MIHARA YASUHIRO <br> SNEAKERS</h3>
+            </div>
+            <div id="imgg2">
+               
+                <img src="https://cdna.lystit.com/cms/maison_mihara_shoes_4f566934fb.jpg" alt="">
+            </div>
+        </div>
+        <div id="tl_img2">
+            <div id="ttl2">
+                <h3>CHIMI SUNGLASSES</h3>
+            </div>
+            <div id="imgg2">
+               
+                <img src="https://cdna.lystit.com/cms/chimi_sunglasses_1629b146e4.jpg" alt="">
+            </div>
+        </div>
+        <div id="tl_img2">
+            <div id="ttl2">
+                <h3>BONOBOS PANTS, SLACK AND <br> CHINOS</h3>
+            </div>
+            <div id="imgg2">
+               
+                <img src="https://cdna.lystit.com/cms/bonobos_pants_ff66673693.jpg" alt="">
+            </div>
+        </div>
+       
+    </div>
+
+    <!-- scroll2 end -->
+
+    <!-- 123 div start -->
+
+    <div id="div123">
+        <div id="nmdiv">
+            
+            <div><h1>1</h1></div>
+            <div><h1>2</h1></div>
+            <div><h1>3</h1></div>
+            <div><h2>THE BIGGEST SELECTION</h2></div>
+            <div><h2>THE HOTTEST PRODUCTS</h2></div>
+            <div><h2>THE BEST PRICES</h2></div>
+            <div><p>Shop over 12,000 brands and stores in one place.</p></div>
+            <div style="padding-bottom: 12px;"><p>See what’s new and what’s trending.</p></div>
+            <div><p>Compare prices and shipping options across thousands of stores.</p></div>
+            <div style="padding-bottom: 100px;"><p>Find exactly what you want with powerful search and personal recommendations.</p></div>
+            <div style="padding-bottom: 100px;"><p>Hit the heart to receive alerts on the latest drops from your favourite brands.</p></div>
+            <div style="padding-bottom: 100px;"><p>Lyst members are notified when an item goes on sale.</p></div>
+        </div>
+        
+       
+        
+        <div id="cldiv">
+            <div>
+                <h1>SIGN UP <br> FOR <br> SMARTER <br> SHOPPING <br> <button>Join</button></h1>
+                
+            </div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- 123 div end -->
+
+    <!-- most wanted start -->
+
+    <div id="mwdiv">
+        <div id="ttl3"><h2>MOST WANTED</h2></div>
+        <div>
+            <div><h2>PEPLUM <br> GOWNS</h2></div>
+            <div><h2>POINTED-TOE MULES</h2></div>
+            <div><h2>EMERALD <br> HUGGIE <br> EARRINGS</h2> </div>
+            <div><h2>SMOCKED <br> SHORT SLEEVE <br> TOPS</h2> </div>
+            <div><h2>SEQUIN PAINTS</h2> </div>
+            <div><h2>NIKE DUNK LOW SNEAKERS</h2> </div>
+            <div><h2>REEBOK ZIG SNEAKERS</h2> </div>
+            <div><h2>MENS LONG CARADIGAN SWEATERS</h2> </div>
+            <div><h2>ADIDAS FORUM SNEAKERS</h2> </div>
+            <div><h2>COMMON PROJECT ACHILLERS SNEAKERS</h2> </div>
+           
+            
+
+        </div>
+    </div>
+
+    <!-- most wanted end -->
+
+   <!-- footer start -->
+
+   <div id="footer">
+        <div id="fhalftr">
+            <img src="Screenshot (172).png" alt=""> <br>
+            <p>Learn about the Lyst app for iphone, iPad and Android</p> <br>
+            <p class="yr">@ 2022 Lyst</p>
+        </div>
+
+        <div id="shalftr">
+            <div>
+                <h3>INTERNATIONAL</h3>
+                <p>Lyst - AU</p>
+                <p>Lyst - CA</p>
+                <p>Lyst - UK</p>
+                <p>Lyst - Osterreich</p>
+                <p>Lyst - Schweiz</p>
+                <p>Lyst -Schweiz</p>
+                <p>Lyst - Deutschland</p>
+                <p>Lyst - Espana</p>
+                <p>Lyst - France</p>
+                <p>Lyst - Italia</p>
+                <p>Lyst - Belgie</p>
+                <p>Lyst -Nederland</p>
+               
+            </div>
+            <div>
+                <h3>HELP AND INFO</h3>
+                <p>Help center</p>
+                <p>About us</p>
+                <p>Shipping policy</p>
+                <p>Returns policy</p>
+                <p>Payments</p>
+                <p>Refund policy</p>
+                <p>Developers</p>
+                <p>Careers</p>
+                <p>Contact</p>
+                <p>Terms $ conditions</p>
+                <p>Privacy & cookie policy</p>
+                <p>Intellectual property</p>
+                <p>Categories</p>
+                <p>Become a partner</p>
+                <p>Lyst Insight</p>
+                <p>Lyst News</p>
+            </div>
+
+        </div>
+    </div>
+
+     <!-- footer end -->
+
+    
+</body>
+</html>
+<script>
+    let indexArr=JSON.parse(localStorage.getItem("loginData"));
+
+    console.log(indexArr)
+
+    if(localStorage.getItem("flag_sta")){
+        document.querySelector("#emptylog").innerHTML="Hi"+" "+ indexArr.name;
+       
+
+        document.querySelector("#emptyjoin").innerHTML="";
+    }
+</script>
+
