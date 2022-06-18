@@ -11,7 +11,7 @@ if(localStorage.getItem("flag_sta")){
 
  
 
-  var mensLs=JSON.parse(localStorage.getItem("mensDataLs")) ||[] ;
+  var mensLs=JSON.parse(localStorage.getItem("mensDataLs")) || [] ;
   
   document.querySelector("#sort").addEventListener("change",handleSortName);
 
@@ -451,7 +451,7 @@ var mensData = [
 localStorage.setItem("mensDataLs",JSON.stringify(mensData));
 
 
-let addCartArr=JSON.parse(localStorage.getItem("addTCart")) || [];
+let addCartArr=JSON.parse(localStorage.getItem("addTCart")) ||[];
 
 
 displayPage(mensLs);
